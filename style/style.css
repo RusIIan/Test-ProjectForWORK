@@ -10,7 +10,7 @@ a {
   text-decoration: none;
 }
 .header__back {
-  background-image: url(/image/Header__Home__img.png);
+  background-image: url(../image/Header__Home__img.png);
   height: 800px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -208,10 +208,12 @@ a {
   width: 100%;
 }
 .news__text,
-.services__text,
 .message__text,
 .townspeople__text,
-.hotline__text {
+.hotline__text,
+.info-res__text,
+.services__text,
+.project__text {
   color: #333;
   font-family: Roboto;
   font-size: 33px;
@@ -243,13 +245,13 @@ a {
 }
 @media screen and (max-width: 1999px) {
   .card-title {
-    font-size: 18px !important;
+    font-size: 17px !important;
     font-weight: 500;
   }
 }
 @media screen and (max-width: 1401px) and (min-width: 768px) {
   .card-title {
-    font-size: 13.6px !important;
+    font-size: 13.23px !important;
     font-weight: 500 !important;
   }
   .card-body {
@@ -279,13 +281,20 @@ a {
 /* News Slider Start */
 
 /* To the townspeople Start */
+.townspeople {
+  background: #f8f8f8;
+  margin-top: 50px;
+}
 .main__people ul {
   padding: 0;
 }
 .people__icon {
-  width: 25px;
-  height: auto;
-  margin: 25px 48px 25px 0;
+  width: 40px;
+  margin: 25px 15px 25px 0;
+  display: inline-block;
+  background: #fff;
+  padding: 5px;
+  border-radius: 100px;
 }
 .icon__area {
   border-radius: 50%;
@@ -309,11 +318,16 @@ a {
   border-bottom: 1px solid #e5e5eb;
   width: 100%;
   position: absolute;
-  bottom: -3px; /* Регулирует положение линии относительно текста */
+  bottom: -3px;
   left: 0;
 }
 /* To the townspeople End */
 /* Events-img start */
+.event {
+  background: #f8f8f8;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
 .card-events {
   color: #999;
   font-family: "Montserrat", sans-serif;
@@ -367,7 +381,7 @@ a {
   max-width: 900px;
   height: 176px;
 }
-.services__text {
+.services__content-text {
   width: 65%;
   color: #333;
   font-family: Roboto;
@@ -376,10 +390,76 @@ a {
   font-weight: 400;
   line-height: 26px; /* 130% */
 }
+@media screen and (max-width: 1190px) and (min-width: 992px) {
+  .services__content {
+    padding: 18px;
+  }
+  .services__icon {
+    padding-right: 20px;
+  }
+  .services__icon > img {
+    width: 60px;
+  }
+  .services__content-text {
+    width: 100%;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 991px) and (min-width: 769px) {
+  .services__content {
+    padding: 10px;
+  }
+  .services__icon {
+    padding: 5px 15px 5px 5px;
+  }
+  .services__icon > img {
+    width: 60px;
+  }
+  .services__content-text {
+    width: 100%;
+    font-size: 14px;
+  }
+}
 /* Муниципальные услуги конец */
 
-/* Информационные ресурсы начало */
+/* Проект начало */
+.main__project {
+  background: #365edc;
+  padding: 50px;
+}
+.project__text {
+  margin-bottom: 20px;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 50px;
+}
+.project__links {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px; /* 150% */
+}
+/* Проект конец */
+/* Горячие линии начало */
+.main__hotline {
+  background: #f8f8f8;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+/* Горячие линии конец */
 
+/* Информационные ресурсы начало */
+.main__info-res {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
 /* Информационные ресурсы конец */
 
 /* Footer  */
