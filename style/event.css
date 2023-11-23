@@ -138,6 +138,11 @@
     width: 250px !important;
   }
 }
+@media screen and (max-width: 649px) {
+  .main__event  {
+    display: none;
+  }
+}
 .card .card-text {
   color: #333;
   font-family: Roboto;

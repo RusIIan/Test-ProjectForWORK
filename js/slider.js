@@ -14,7 +14,7 @@ $(document).ready(function () {
       {
         breakpoint: 800,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
         },
       },
       {
@@ -24,7 +24,13 @@ $(document).ready(function () {
         },
       },
       {
-        breakpoint: 1000,
+        breakpoint: 995,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 1200,
         settings: {
           slidesToShow: 3,
         },
@@ -75,6 +81,40 @@ $(document).ready(function () {
           centerMode: false,
           variableWidth: true,
           adaptiveHeiht: false,
+        },
+      },
+    ],
+  });
+  $(".event-slider").slick({
+    dots: false,
+    adaptiveHeiht: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    speed: 1000,
+    initialSlide: 1,
+    autoplay: false,
+    autoplaySpeed: 2000,
+    centerMode: true,
+    responsive: [
+      {
+        breakpoint: 750,
+        settings: {
+          slidesToShow: 1,
+          centerMode: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          centerMode: false,
+        },
+      },
+      {
+        breakpoint: 1000,
+        settings: {
+          slidesToShow: 1,
+          centerMode: false,
         },
       },
     ],

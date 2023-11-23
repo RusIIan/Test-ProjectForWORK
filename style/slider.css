@@ -24,7 +24,69 @@
 .slider__item > a > img {
   width: 240px;
 }
-
+@media screen and (max-width: 649px) {
+  .people-content{
+    display: none;
+  }
+  .townspeople__links{
+    display: none;
+  }
+  .project__links{
+    display: none;
+  }
+  .services__links{
+    display: none;
+  }
+  .main__message{
+    display: none;
+  }
+  .main__townspeople{
+    display: none;
+  }
+  .slider .slick-arrow {
+    position: static !important;
+  }
+  .slider .slick-arrow.slick-prev {
+    background: none !important;
+    border: transparent !important;
+    padding: 0 !important;
+  }
+  .slider .slick-arrow.slick-arrow.slick-next {
+    background: none !important;
+    border: transparent !important;
+    padding: 0 !important;
+  }
+  .hotline__links {
+    display: none;
+  }
+}
+@media screen and (max-width: 313px) {
+  .info-res__text {
+    width: 50% !important;
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 313px) {
+  .services__content {
+    padding: 0 !important;
+    height: 140px !important;
+  }
+  .services__content-text {
+    width: 80%;
+    font-size: 15px;
+    line-height: normal;
+  }
+  .services__icon > img {
+    width: 50px !important;
+  }
+  .slider-text {
+    font-size: 13px !important;
+    font-weight: bold !important;
+  }
+  .slider-number {
+    font-size: 18px !important;
+  }
+}
 /* стрелки */
 .slider .slick-arrow {
   position: absolute;
@@ -102,7 +164,7 @@
   display: flex;
   flex-direction: column;
 }
-.slider-area-icon{
+.slider-area-icon {
   margin-bottom: 15px;
 }
 .slider__line {
@@ -121,7 +183,7 @@
   position: relative;
 }
 
-.project__slider-line{
+.project__slider-line {
   border-radius: 4px;
   padding: 20px;
   height: 400px;
@@ -203,7 +265,7 @@
   display: none;
 }
 @media screen and (max-width: 768px) {
-  .project__slider-line{
+  .project__slider-line {
     margin: 0;
   }
   .project__slider-area > img {
@@ -236,7 +298,7 @@
   }
 }
 @media screen and (max-width: 820px) {
-  .project__slider-line{
+  .project__slider-line {
     margin: 0 !important;
   }
   .project__slider-area > img {
@@ -275,11 +337,11 @@
     border: none;
     padding: none;
   }
-  .project__slider-line{
+  .project__slider-line {
     display: flex;
     justify-content: center;
   }
-  .slick-list {
+  .project-slider .slick-list {
     height: 500px !important;
   }
   .project-slider-content-header-title {

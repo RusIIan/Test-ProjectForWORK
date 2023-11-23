@@ -321,6 +321,44 @@ a {
   bottom: -3px;
   left: 0;
 }
+.people__area-min {
+  position: relative;
+}
+.people__area-min > a {
+  color: black;
+  font-weight: 500;
+  font-size: 15px;
+}
+.people__area-min::after {
+  content: "";
+  display: block;
+  border-bottom: 1px solid #e5e5eb;
+  width: 100%;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+}
+.people-content-min {
+  display: none;
+}
+@media screen and (max-width: 346px) {
+  .people__area-min > a {
+    color: black;
+    font-weight: 400;
+    font-size: 13px;
+  }
+  .people__area-min .people__icon {
+    margin-right: 0px !important;
+  }
+}
+@media screen and (max-width: 767px) {
+  .people-content {
+    display: none;
+  }
+  .people-content-min {
+    display: block;
+  }
+}
 /* To the townspeople End */
 /* Events-img start */
 .event {
@@ -460,6 +498,47 @@ a {
   margin-top: 80px;
   margin-bottom: 80px;
 }
+.card-message-data {
+  color: #999;
+  font-family: Montserrat;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 153.846% */
+}
+.card-message-text {
+  color: #333;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px; /* 137.5% */
+  width: 200px;
+}
+.card-message-desc {
+  color: #666;
+  font-family: Montserrat;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23px; /* 153.333% */
+  width: 200px;
+}
+.card-message {
+  border-radius: 4px;
+  border: 1px solid #e5e5e5;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 15px;
+}
+.card-message > img {
+  width: 200px;
+}
+
 /* Информационные ресурсы конец */
 
 /* Footer  */
@@ -584,7 +663,7 @@ a {
   font-style: normal;
   font-weight: 400;
   line-height: 20px; /* 166.667% */
-  width: 775px;
+  width: 56%;
 }
 .footer__botom-text {
   margin-right: 5rem;
