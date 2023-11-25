@@ -50,6 +50,14 @@
 .news-text-content {
   display: none;
 }
+@media screen and (max-width: 539px ) {
+    .news-text-content {
+    width: 207px;
+    display: flex;
+    align-items: center;
+    padding-left: 35px !important;
+  }
+}
 @media screen and (max-width: 649px) {
   .news__text-min {
     color: #333;
@@ -63,7 +71,7 @@
     width: 207px;
     display: flex;
     align-items: center;
-    margin-left: 50px;
+    padding-left: 110px;
   }
   .event {
     background-color: #f8f8f8;
@@ -139,7 +147,7 @@
   }
 }
 @media screen and (max-width: 649px) {
-  .main__event  {
+  .main__event {
     display: none;
   }
 }

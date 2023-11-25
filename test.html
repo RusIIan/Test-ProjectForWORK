@@ -11,51 +11,43 @@
 </head>
 
 <body>
-  <div class="container event">
-    <div class="news-text-content">
-      <span class="news__text-min">События и мероприятия</span>
-    </div>
-    <div class="event-slider">
-      <div class="event__slider-line">
-        <div class="event__slider-area">
-          <div class="card" style="width: 18rem;">
-            <img src="image/events-img/img1.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-data">10 марта 2023</p>
-              <p class="card-text">Заголовок новый длинный в несколько строк очень длинный</p>
-            </div>
-          </div>
-        </div>
+  <div class="container">
+    <div class="header">
+      <div class="menu__logo">
+        <img class="menu__burger" src="image/icon/burger-menu.png" alt="">
+        <img class="logo__img" src="image/logo.png" alt="">
+        <a href="">АДМИНИСТРАЦИЯ МУНИЦИПАЛЬНОГО ОБРАЗОВАНИЯ</a>
       </div>
-      <div class="event__slider-line">
-        <div class="event__slider-area">
-          <div class="card" style="width: 18rem;">
-            <img src="image/events-img/img1.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-data">10 марта 2023</p>
-              <p class="card-text">Заголовок новый длинный в несколько строк очень длинный</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="event__slider-line">
-        <div class="event__slider-area">
-          <div class="card" style="width: 18rem;">
-            <img src="image/events-img/img1.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-data">10 марта 2023</p>
-              <p class="card-text">Заголовок новый длинный в несколько строк очень длинный</p>
-            </div>
-          </div>
-        </div>
-      </div>
+      <nav class="nav">
+        <ul class="navbar__menu">
+          <li class="menu__item"><a href="#" class="menu__link">Главное</a></li>
+          <li class="menu__item submenu">
+            <a href="#" class="menu__link submenu">О районе</a>
+            <ul class="submenu__items">
+              <li class="submenu__area"><a href="#">Общая информация</a></li>
+              <li class="submenu__area"><a href="#">История</a></li>
+              <li class="submenu__area"><a href="#">Туризм и отдых</a></li>
+              <li class="submenu__area"><a href="#">СМИ района</a></li>
+              <li class="submenu__area"><a href="#">Международное сотрудничество</a></li>
+              <li class="submenu__area"><a href="#">Защита населения и территории от ЧС</a></li>
+              <li class="submenu__area"><a href="#">Статическая информация</a></li>
+              <li class="submenu__area"><a href="#">Законодательная карта</a></li>
+            </ul>
+          </li>
+
+          <li class="menu__item"><a href="#" class="menu__link">Органы</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">Документы</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">Услуги</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">Пресс-центр</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">Горожанам</a></li>
+          <li class="menu__item"><img src="image/icon/search.png" class="menu__link" alt=""></li>
+        </ul>
+      </nav>
     </div>
   </div>
-
-
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-  <script src="js/slick.min.js"></script>
-  <script src="js/project-slider.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

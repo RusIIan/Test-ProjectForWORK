@@ -40,7 +40,7 @@
   .main__message{
     display: none;
   }
-  .main__townspeople{
+  .main__townspeople >.news__links{
     display: none;
   }
   .slider .slick-arrow {
