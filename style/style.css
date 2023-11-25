@@ -21,19 +21,7 @@ a {
     display: none !important;
   }
 }
-.grid-container {
-  display: flex;
-  gap: 20px; /* Задаем отступ между элементами */
-  flex-wrap: wrap;
-}
-.grid-item {
-  flex: 1 1 auto;
-}
-@media screen and (max-width: 767px) {
-  .grid-item {
-    display: none !important;
-  }
-}
+
 .header__navigation {
   background: rgba(0, 0, 0, 0.2);
 }
@@ -55,18 +43,10 @@ a {
   font-weight: 400;
   line-height: 20px; /* 166.67% */
 }
-.logo__location {
-  margin-right: 5px;
-}
-.location__phone {
-  color: #fff;
-  font-family: "Montserrat", sans-serif;
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 25px; /* 166.667% */
-}
 .location__language {
+  display: inline-block;
+}
+.location__language-item {
   color: #fff;
   font-family: "Montserrat", sans-serif;
   font-size: 12px;
@@ -77,13 +57,52 @@ a {
   border: transparent;
   background: none;
 }
-.location__glasses {
+.location__phone-item {
   color: #fff;
   font-family: "Montserrat", sans-serif;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
-  line-height: 20.028px; /* 166.898% */
+  line-height: 20px; /* 166.67% */
+  text-transform: uppercase;
+  border: transparent;
+  background: none;
+}
+.loaction-social-media {
+  display: inline-block;
+}
+.loaction-social-media > a {
+  margin-right: 21px;
+}
+.location__phone {
+  display: inline-block;
+}
+.location__eye {
+  display: inline-block;
+}
+.location__eye-item {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+@media screen and (max-width: 992px) {
+  .location__phone-item {
+    font-size: 10px;
+  }
+  .location__eye-item {
+    font-size: 10px;
+  }
+  .location__address {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header__info{
+    display: none;
+  }
 }
 .navigation__menu {
   position: relative;
@@ -93,7 +112,6 @@ a {
   background: #fff;
   box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.05);
 }
-
 .submenu__items {
   display: none;
   position: absolute;
@@ -360,12 +378,12 @@ a {
   }
 }
 @media screen and (max-width: 1200px) {
-  .people__icon{
+  .people__icon {
     margin-right: 0px;
     width: 20px;
     padding: 1px;
   }
-  .people__area .people__item{
+  .people__area .people__item {
     font-size: 11.3px;
     font-weight: 600;
   }
