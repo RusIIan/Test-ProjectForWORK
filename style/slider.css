@@ -98,7 +98,7 @@
   margin: -30px 0px 0px 0px;
 }
 .slider .slick-arrow.slick-prev {
-  left: -3rem;
+  left: -2rem;
   background: url(../image/icon/arrow-left.svg);
   background-position: center;
   background-repeat: no-repeat;
@@ -108,7 +108,7 @@
   padding: 15px;
 }
 .slider .slick-arrow.slick-arrow.slick-next {
-  right: -3rem;
+  right: -1rem;
   background: url(../image/icon/arrow-right.svg);
   background-position: center;
   background-repeat: no-repeat;

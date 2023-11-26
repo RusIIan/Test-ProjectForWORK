@@ -1,9 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600;1,700;1,800;1,900&display=swap");
-body {
+/* body {
   background-color: #333;
-}
+} */
 /* =========== */
+.header__back {
+  background-image: url(../image/Header__Home__img.png);
+  height: 800px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 .header {
   display: flex;
   align-items: center;
@@ -20,7 +27,7 @@ body {
 .menu__logo > img {
   margin-right: 15px;
 }
-.menu__burger{
+.menu__burger {
   cursor: pointer;
 }
 .menu__logo > a {
@@ -38,7 +45,7 @@ body {
 .navbar__menu .menu__item .menu__link {
   font-size: 1rem;
   color: #000;
-  font-weight: 600;
+  font-weight: 400;
   padding-left: 1.97rem;
   font-family: "Montserrat", sans-serif;
   line-height: 19px;
@@ -387,6 +394,162 @@ select:focus {
 .dropdow-menu.active {
   transform: translateX(0%);
 }
-.dropdow-menu{
+.dropdow-menu {
   transform: translateX(100%);
+}
+/* header nav */
+.header__content.active {
+  display: none;
+}
+.header-not-nav {
+  position: relative;
+  padding: 1.3rem 10%;
+}
+@media screen and (max-width: 1153px) {
+  .header-not-nav {
+    padding: 1rem 2%;
+  }
+}
+@media screen and (max-width: 1120px) {
+  .header-not-nav-close {
+    left: 20px !important;
+  }
+}
+@media screen and (max-width: 992px) {
+  .header-not-nav {
+    padding: 0.1rem;
+  }
+}
+.header-not-nav-logo-number {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px; /* 166.667% */
+}
+.header-not-nav-close {
+  position: absolute;
+  width: 20px;
+  left: 50px;
+  cursor: pointer;
+}
+.header-not-nav-btn {
+  display: inline-flex;
+  padding: 18px 27px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 4px;
+  border: 1px solid #365edc;
+  background: #365edc;
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 125% */
+}
+.header-not-nav-menu__logo {
+  display: flex;
+  align-items: center;
+}
+.header-not-nav-menu__logo .header-not-nav-logo__img {
+  margin-right: 15px;
+}
+.header-not-nav-menu__logo > a {
+  width: 174px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+}
+.header-not-nav-social-media > span {
+  padding-left: 10px;
+}
+/* menu */
+.header-not-nav-menu-content {
+  list-style: none;
+}
+.header-not-nav-menu-items {
+  margin-bottom: 15px;
+  position: relative;
+}
+.header-not-nav-menu-links {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 19px; /* 118.75% */
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.header-not-nav-under-menu {
+  position: absolute;
+  top: 0px;
+  transform: translateX(0%);
+  display: none;
+}
+.header-not-nav-under-menu.active {
+  transform: translateX(80%);
+  display: block;
+}
+.header-not-nav-under-menu-items:first-child::before {
+  content: "";
+  position: absolute;
+  border: 0.5px solid white;
+  height: 1px;
+  width: 150px;
+  left: -131px;
+  top: 13px;
+}
+.header-not-nav-under-menu-items {
+  margin-bottom: 10px;
+  list-style-type: none;
+}
+.header-not-nav-under-menu-links {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 175% */
+  text-decoration: none;
+}
+.header-not-nav-info > span {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 166.67% */
+}
+.header-not-nav-info > span > img {
+  padding-right: 10px;
+}
+.header-not-nav {
+  display: none;
+}
+.header-not-nav.active {
+  display: block;
+}
+@media screen and (max-width: 767px) {
+  .header-not-nav.active {
+    display: none !important;
+  }
+  .header__content.active{
+    display: block !important;
+  }
+  .menu__burger {
+    display: block !important;
+  }
+  .menu__burger-item {
+    display: none;
+  }
+}
+.menu__burger {
+  display: none;
+}
+.header-not-nav-footer{
+  margin-top: 300px;
 }

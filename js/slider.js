@@ -160,4 +160,34 @@ $(document).ready(function () {
       $(".dropdow-menu").removeClass("active");
     }
   });
+  $(document).ready(function () {
+    $(".menu__burger-item").click(function (event) {
+      $(".header__content").addClass("active");
+    });
+    $(".menu__burger-item").click(function (event) {
+      $(".header-not-nav").addClass("active");
+    });
+    var closeIcon = document.querySelector(".header-not-nav-close");
+    var headerContent = document.querySelector(".header__content");
+    var headernavMenu = document.querySelector(".header-not-nav");
+
+    if (closeIcon && headerContent) {
+      closeIcon.addEventListener("click", function () {
+        headerContent.classList.remove("active");
+      });
+    }
+    if (closeIcon && headernavMenu) {
+      closeIcon.addEventListener("click", function () {
+        headernavMenu.classList.remove("active");
+      });
+    }
+    $(".header-not-nav-menu-links").click(function (e) {
+      e.preventDefault();
+      $(this).next(".header-not-nav-under-menu").toggleClass("active");
+
+      $(".header-not-nav-under-menu")
+        .not($(this).next(".header-not-nav-under-menu"))
+        .removeClass("active");
+    });
+  });
 });
