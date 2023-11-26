@@ -16,11 +16,6 @@ a {
   background-size: cover;
   background-position: center;
 }
-@media screen and (max-width: 500px) {
-  .header__navigation {
-    display: none !important;
-  }
-}
 /* =========== */
 .header {
   display: flex;
@@ -84,11 +79,17 @@ a {
     width: 50px;
   }
 }
+.search {
+  display: none;
+}
 @media screen and (max-width: 991px) {
-  .header {
+  .nav {
     display: none;
   }
-  .header__big-menu{
+  .search {
+    display: block;
+  }
+  .header__info-menu {
     display: none;
   }
 }
@@ -98,7 +99,7 @@ a {
 }
 .submenu__items {
   position: absolute;
-  top: calc(100% );
+  top: calc(100%);
   left: calc(14%);
   height: max-content;
   display: none;
@@ -129,8 +130,8 @@ a {
 .submenu__items:hover {
   display: block;
 }
-.submenu__area:hover >a{
-  color:red
+.submenu__area:hover > a {
+  color: red;
 }
 /* =========== */
 
@@ -208,11 +209,198 @@ a {
     font-size: 10px;
   }
 }
-@media screen and (max-width: 959px) {
-  .header__info {
-    display: none;
+.nav-min {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  background: #fff;
+  transform: translateX(100%);
+  transition: transform 0.5s;
+}
+.nav-min.active {
+  transform: translateX(0%);
+}
+.nav-min .nav-min__list_item {
+  list-style-type: none;
+}
+.close {
+  position: absolute;
+  left: 245px;
+  top: 30px;
+  width: 20px;
+  cursor: pointer;
+}
+.burger-logo {
+  width: 50px;
+}
+.burger-logo-contend {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.logo-text {
+  display: inline-block;
+  max-width: 20%;
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 13px;
+}
+.nav-min__list {
+  padding-left: 15px;
+  margin: 0;
+}
+.nav-min__list .nav-min__list_item {
+  margin-bottom: 10px;
+}
+.nav-min__list .nav-min__list_item .nav-min__link {
+  color: #333;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 19px; /* 118.75% */
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.nav-min-btn {
+  border-radius: 4px;
+  border: 1px solid #365edc;
+  background: #365edc;
+  display: inline-flex;
+  padding: 5px 10px;
+  align-items: flex-start;
+  gap: 5px;
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
+.nav-min-info {
+  display: block;
+  position: relative;
+}
+.nav-min-info span {
+  color: #bdbdbd;
+  font-family: Montserrat;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.nav-min-info span > img {
+  padding-right: 8px;
+}
+.nav-min-social-media > img {
+  padding-right: 10px;
+}
+.nav-min-info-location {
+  display: flex;
+  flex-direction: column;
+  align-items: start !important;
+}
+.nav-min-info-location > span {
+  color: #bdbdbd;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 10px;
+}
+.nav-min-info-location span > img {
+  padding-right: 10px;
+}
+.nav-min__language-item {
+  color: #bdbdbd;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  border: transparent;
+  background: none;
+}
+select:focus {
+  outline: none;
+}
+.active {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .active {
+    display: block;
   }
 }
+.nav-min-social-media {
+  position: absolute;
+  left: 160px;
+  top: 0;
+}
+.dropdow-menu li {
+  margin-top: 10px;
+  list-style: none;
+}
+.dropdow-menu span {
+  color: #333;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 19px; /* 118.75% */
+  text-transform: uppercase;
+}
+.dropdow-menu li a {
+  color: #333;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 175% */
+  text-decoration: none;
+  display: inline-block;
+  width: 272px;
+}
+.dropdow-menu .close {
+  position: absolute;
+  left: 245px;
+  top: 30px;
+  width: 20px;
+  cursor: pointer;
+}
+.dropdow-menu .back {
+  position: absolute;
+  left: 10px;
+  top: 24px;
+  width: 30px;
+  cursor: pointer;
+}
+.dropdow-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  background: #fff;
+  transform: translateX(100%);
+  transition: transform 0.5s;
+  z-index: 999;
+}
+
+.dropdow-menu.active {
+  transform: translateX(0%);
+}
+.dropdow-menu{
+  transform: translateX(100%);
+}
+
 /*Main*/
 .advertising__img {
   max-width: 100%;

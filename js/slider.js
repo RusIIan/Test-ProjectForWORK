@@ -119,4 +119,45 @@ $(document).ready(function () {
       },
     ],
   });
+  $(document).ready(function () {
+    $(".menu__burger").click(function () {
+      $(".nav-min").addClass("active");
+    });
+
+    $(".close").click(function () {
+      $(".nav-min").removeClass("active");
+    });
+  });
+  $(document).ready(function () {
+    $(".menu__burger").click(function () {
+      $(".nav-min").addClass("active");
+    });
+
+    $(".close").click(function () {
+      $(".nav-min").removeClass("active");
+      closeAllMenus();
+    });
+
+    $(".dropdow").click(function (event) {
+      event.preventDefault();
+      closeAllMenus();
+      $(this).find(".dropdow-menu").addClass("active");
+    });
+
+    // Обработчик клика для элемента с классом .back
+    $(".back").click(function (event) {
+      event.preventDefault();
+      $(this).closest(".dropdow").find(".dropdow-menu").removeClass("active");
+    });
+
+    // Обработчик клика для элемента с классом .dropdow-menu
+    $(".dropdow-menu").click(function (event) {
+      event.stopPropagation();
+      // Ваш код для обработки события на .dropdow-menu
+    });
+
+    function closeAllMenus() {
+      $(".dropdow-menu").removeClass("active");
+    }
+  });
 });

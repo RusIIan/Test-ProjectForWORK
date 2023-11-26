@@ -40,7 +40,7 @@
   .main__message{
     display: none;
   }
-  .main__townspeople >.news__links{
+  .main__townspeople{
     display: none;
   }
   .slider .slick-arrow {
@@ -381,13 +381,5 @@
   }
   .project-slider .slick-arrow.slick-arrow.slick-next {
     padding: 10px;
-  } */
-}
-@media screen and (max-width: 431px) and (min-width: 370px) {
-  /* .project-slider .slick-arrow.slick-prev {
-    left: 3.2rem !important;
-  }
-  .project-slider .slick-arrow.slick-arrow.slick-next {
-    right: 3.2rem !important;
   } */
 }
